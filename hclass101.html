@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hclass101</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <style type="text/css">
+        h1{padding: 50px;
+            text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>취미 사이트 소개</h1>
+    <ul class="nav nav-tabs">
+        <li role="presentation"><a href="/">홈</a></li>
+        <li role="presentation"><a href="/htaling">탈잉</a></li>
+        <li role="presentation"><a href="/hhobbybox">하비박스</a></li>
+        <li role="presentation"><a href="/hconects">커넥츠 취미 클래스</a></li>
+        <li role="presentation"><a href="/hclass101">클래스101</a></li>
+    </ul>
+    <div class="img">
+        <a href="https://class101.net/">
+        <img src="data:image/png;base64,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"
+        width="50",height="50">
+        </a>
+    </div>
+    <div class="first"><a href="https://312887.typeform.com/to/uDCvhW">클래스 추천받기</a> </div>
+    <div class="second"><a href="https://class101.net/categories/5c5d5bfc74eabcfdafc3a2e7"><img src="https://class101.net/images/im-art.png" width="50",height="50"> 미술</a></div>
+    <div class="third"><a href="https://class101.net/categories/5c7821a235b52893ce37e39a"><img src="https://class101.net/images/im-craft.png" width="50",height="50"> 공예</a></div>
+    <div class="fourth"><a href="https://class101.net/categories/5c7821a235b52893ce37e39c"><img src="https://class101.net/images/im-digital.png" width="50", height="50"> 디지털 드로잉</a></div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="first"><a href="https://class101.net/categories/5c7821a235b52893ce37e3b0"><img src="https://class101.net/images/im-lifestyle.png" width="50", height="50"> 라이프 스타일</a></div>
+    <div class="second"><a href="https://class101.net/categories/5c5d5bfc74eabcfdafc3a2da"><img src="https://class101.net/images/im-food.png"width="50", height="50"> 요리,음료</a></div>
+    <div class="third"><a href="https://class101.net/categories/5c7821a235b52893ce37e3b1"><img src="https://class101.net/images/im-design.png"width="50", height="50"> 디자인,개발</a></div>
+    <div class="fourth"><a href="https://class101.net/categories/5c5d5bfc74eabcfdafc3a2de"><img src="https://class101.net/images/im-music.png"width="50", height="50"> 음악</a></div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="first"><a href="https://class101.net/categories/5c5d5bfc74eabcfdafc3a2e2"><img src="https://class101.net/images/im-picture.png"width="50", height="50"> 사진,영상</a></div>
+    <div class="second"><a href="https://class101.net/new/collections/5e180cb01b12bc0dca0c8176"><img src="https://class101.net/images/im-career.png"width="50", height="50"> 커리어</a></div>
+    <div class="third"><a href="https://class101.net/categories/5cf954a2f48520f37cd4ddf2"><img src="https://class101.net/images/im-signature.png"width="50", height="50"> 시그니처</a></div>
+</body>
+</html>

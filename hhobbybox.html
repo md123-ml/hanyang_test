@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hhobbybox</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <style type="text/css">
+        h1{padding: 50px;
+            text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>취미 사이트 소개</h1>
+    <ul class="nav nav-tabs">
+        <li role="presentation"><a href="/">홈</a></li>
+        <li role="presentation"><a href="/htaling">탈잉</a></li>
+        <li role="presentation"><a href="/hhobbybox">하비박스</a></li>
+        <li role="presentation"><a href="/hconects">커넥츠 취미 클래스</a></li>
+        <li role="presentation"><a href="/hclass101">클래스101</a></li>
+    </ul>
+    <div class="img">
+        <a href=http://hobbybox.life/main/index.php">
+        <img src="data:image/png;base64,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"
+        width="50",height="50">
+        </a>
+    </div>
+    <div class="first"><a href="http://hobbybox.life/main/index.php#questions">취미 분석 테스트</a></div>
+    <div class="second"><a href="http://hobbybox.life/goods/goods_lists.php?goodType=single&cateCd=012002">제작형</a></div>
+    <div class="third"><a href="http://hobbybox.life/goods/goods_lists.php?goodType=single&cateCd=012003">창작형</a></div>
+    <div class="fourth"><a href="http://hobbybox.life/goods/goods_lists.php?goodType=single&cateCd=012005">감상형</a></div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="second"><a href="http://hobbybox.life/goods/goods_lists.php?goodType=single&cateCd=012004">오락형</a></div>
+    <div class="third"><a href="http://hobbybox.life/goods/goods_lists.php?goodType=single&cateCd=012006">분석형</a></div>
+</body>
+</html>

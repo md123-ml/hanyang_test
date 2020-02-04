@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hconects</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style type="text/css">
+        h1{padding: 50px;
+            text-align: center;}
+        .img{margin-left:110px;}
+        .first{float: left;
+        margin-left:160px;}
+        .list_title{display: none;}
+		p{font-size: 15px; padding: 10px; margin-top: 10px;}
+        .b{text-align:center;}
+    </style>
+    <script>
+		$(document).ready(function(){
+			$(".second").click(function(){if($(".list_one").css("display")=='none'){$(".list_one").show();}
+										else{$(".list_one").hide();}
+			});
+			$(".third").click(function(){if($(".list_two").css("display")=='none'){$(".list_two").show();}
+												else{$(".list_two").hide();}
+			});
+			$(".fourth").click(function(){if($(".list_three").css("display")=='none'){$(".list_three").show();}
+												else{$(".list_three").hide();}
+			});
+            $(".fifth").click(function(){if($(".list_four").css("display")=='none'){$(".list_four").show();}
+                                                else{$(".list_four").hide();}
+            });
+            $(".sixth").click(function(){if($(".list_five").css("display")=='none'){$(".list_five").show();}
+                                                else{$(".list_five").hide();}
+            });
+            $(".seventh").click(function(){if($(".list_six").css("display")=='none'){$(".list_six").show();}
+                                                else{$(".list_six").hide();}
+            });
+		});
+	</script>
+</head>
+<body>
+    <h1>취미 사이트 소개</h1>
+    <ul class="nav nav-tabs">
+        <li role="presentation"><a href="/">홈</a></li>
+        <li role="presentation"><a href="/htaling">탈잉</a></li>
+        <li role="presentation"><a href="/hhobbybox">하비박스</a></li>
+        <li role="presentation"><a href="/hconects">커넥츠 취미 클래스</a></li>
+        <li role="presentation"><a href="/hclass101">클래스101</a></li>
+    </ul>
+    <div class="img">
+        <a href="https://hobby.conects.com/">
+        <img src="data:image/png;base64,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"
+        width="50",height="50">
+        </a>
+    </div>
+    <div class="first"><a href="https://hobby.conects.com/landing/tutorial">취미추천</a></div>
+    <br/>
+    <div class="b">
+        <p class="second">라이프스타일</p>
+        <ul class="list_title list_one">
+            <li>요리</li>
+            <li>반려동물</li>
+            <li>패션</li>
+            <li>원예,플라워</li>
+            <li>뷰티</li>
+            <li>음료</li>
+        </ul>
+        <p class="third">건강,운동</p>
+        <ul class="list_title list_two">
+            <li>다이어트</li>
+            <li>스포츠해설</li>
+            <li>운동,댄스</li>
+        </ul>
+        <p class="fourth">자기계발</p>
+        <ul class="list_title list_three">
+                <li>부동산</li>
+                <li>스타트업</li>
+            </ul>
+        <p class="fifth">커리어</p>
+        <ul class="list_title list_four">
+                <li>글쓰기</li>
+                <li>스피치</li>
+            </ul>
+        <p class="sixth">예술</p>
+        <ul class="list_title list_five">
+                <li>음악</li>
+                <li>사진</li>
+                <li>보컬</li>
+            </ul>
+        <p class="seventh">미술,공예</p>
+        <ul class="list_title list_six">
+                <li>미술</li>
+                <li>공예</li>
+            </ul>
+    </div>
+</body>
+</html>

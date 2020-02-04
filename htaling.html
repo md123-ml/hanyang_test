@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>htaling</title>
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+    <style type="text/css">
+        h1{padding: 50px;
+            text-align: center;}
+    </style>
+</head>
+<body>
+    <h1>취미 사이트 소개</h1>
+    <ul class="nav nav-tabs">
+        <li role="presentation"><a href="/">홈</a></li>
+        <li role="presentation"><a href="/htaling">탈잉</a></li>
+        <li role="presentation"><a href="/hhobbybox">하비박스</a></li>
+        <li role="presentation"><a href="/hconects">커넥츠 취미 클래스</a></li>
+        <li role="presentation"><a href="/hclass101">클래스101</a></li>
+    </ul>
+    <div class="img">
+        <a href="https://taling.me/">
+        <img src="data:image/png;base64,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"
+        width="50", height="50">
+        </a>
+    </div>
+    <div class="first"><a href="https://taling.me/Home/Search/?cateMain=1"><img src="https://taling.me/Content/app3/images/icon_cate_design.png"> 디자인</a></div>
+    <div class="second"><a href="https://taling.me/Home/Search/?cateMain=2"><img src="https://taling.me/Content/app3/images/icon_cate_work.png"></img>실무역량</a></div>
+    <div class="third"><a href="https://taling.me/Home/Search/?cateMain=3"><img src="https://taling.me/Content/app3/images/icon_cate_beauty.png"> 뷰티</a></div>
+    <div class="fourth"><a href="https://taling.me/Home/Search/?cateMain=4"><img src="https://taling.me/Content/app3/images/icon_cate_video.png"> 영상</a></div>
+    <br/>
+    <br/>
+    <br/>
+    <div class="first"><a href="https://taling.me/Home/Search/?cateMain=5"><img src="https://taling.me/Content/app3/images/icon_cate_language.png"> 외국어</a></div>
+    <div class="second"><a href="https://taling.me/Home/Search/?cateMain=6"><img src="https://taling.me/Content/app3/images/icon_cate_music.png"> 음악</a></div>
+    <div class="third"><a href="https://taling.me/Home/Search/?cateMain=7"><img src="https://taling.me/Content/app3/images/icon_cate_lifestyle.png"> 라이프스타일</a></div>
+    <div class="fourth"><a href="https://taling.me/Home/Search/?cateMain=8"><img src="https://taling.me/Content/app3/images/icon_cate_etc.png"> 기타</a></div>
+</body>
+</html>
